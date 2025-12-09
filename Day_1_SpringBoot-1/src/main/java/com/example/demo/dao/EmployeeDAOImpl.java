@@ -1,0 +1,40 @@
+package com.example.demo.dao;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.jta.JtaAfterCompletionSynchronization;
+
+import com.example.demo.bean.Employee;
+@Repository
+public class EmployeeDAOImpl implements EmployeeDAO {
+	@Autowired
+	 JdbcTemplate jt; 
+	public EmployeeDAOImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public int addEmployee(Employee emp) {
+		String sql = "Insert into emp0908 values(?,?,?)";
+		int i=jt.update(sql,new Object[] {emp.getId(),emp.getName(),emp.getSalary()});
+		return i;
+	}
+
+	@Override
+	public int updateEmployee(Employee emp) {
+		String sql = "update emp0908 set name=? ,salary=? where id=?";
+		int i=jt.update(sql,new Object[] {emp.getName(),emp.getSalary(),emp.getId()});
+		return i;
+		
+	}
+
+	@Override
+	public int deleteEmployee(Employee emp) {
+		String sql = "delete from emp0908 where id=?";
+		int i=jt.update(sql,new Object[] {emp.getId()});
+		return i;
+	}
+}
