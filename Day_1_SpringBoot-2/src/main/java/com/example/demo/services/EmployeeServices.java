@@ -1,0 +1,16 @@
+package com.example.demo.services;
+
+import com.example.demo.bean.Employee;
+
+public interface EmployeeServices {
+
+	public int addEmployee(Employee emp);
+
+	public int updateEmployee(Employee employee);
+
+	public int deleteEmployee(Employee employee);
+
+	
+
+	
+}

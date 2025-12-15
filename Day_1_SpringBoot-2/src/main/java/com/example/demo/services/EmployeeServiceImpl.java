@@ -1,0 +1,31 @@
+package com.example.demo.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.bean.Employee;
+import com.example.demo.dao.EmployeeDAO;
+@Service
+public class EmployeeServiceImpl implements EmployeeServices{
+	@Autowired
+	EmployeeDAO empDao;
+	public EmployeeServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public int addEmployee(Employee emp) {
+		// TODO Auto-generated method stub
+		return empDao.addEmployee(emp);
+	}
+	@Override
+	public int updateEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		return empDao.updateEmployee(employee);
+	}
+	@Override
+	public int deleteEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		return empDao.deleteEmployee(employee);
+	}
+
+}
