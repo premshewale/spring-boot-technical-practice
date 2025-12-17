@@ -1,0 +1,88 @@
+package com.example.demo.bean;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="newuser1108")
+public class NewUser {
+	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE,generator="ID")
+	@SequenceGenerator(name="ID",sequenceName="seqid",initialValue=1,allocationSize=1)
+	@Column(name="Id")
+	int id;
+	@Column(length=10)
+	String firstname;
+	@Column(length=15)
+	String lastname;
+	@Column(length =20)
+	String username;
+	@Column(length=10)
+	String password;
+	
+	public NewUser() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getFirstname() {
+		return firstname;
+	}
+
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
+	public String getLastname() {
+		return lastname;
+	}
+
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public NewUser(int id, String firstname, String lastname, String username, String password) {
+		super();
+		this.id = id;
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.username = username;
+		this.password = password;
+	}
+
+	@Override
+	public String toString() {
+		return "NewUser [id=" + id + ", firstname=" + firstname + ", lastname=" + lastname + ", username=" + username
+				+ ", password=" + password + "]";
+	}
+	
+
+}

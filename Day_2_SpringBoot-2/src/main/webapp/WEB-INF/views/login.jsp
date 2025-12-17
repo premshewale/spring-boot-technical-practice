@@ -1,0 +1,18 @@
+<h1>login.jsp</h1>
+<fieldset >
+<h2>Add Your Details for Login</h2>
+<form action="login">
+<table bgcolor="lightgrey">
+<tr>
+
+<tr><td>User Name:</td><td> <input type="text" name="username"></td></tr>
+<tr><td>Password:</td><td> <input type="text" name="password"></td></tr>
+
+<tr><td><input type="submit" value="Login"></td></tr>
+<tr><td><input type="Reset"></td></tr>
+</table>
+</form>
+
+
+</fieldset>
+<h4><a href="newUser">Go to Index Page..</a></h4>
