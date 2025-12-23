@@ -1,0 +1,6 @@
+com\demo\service\ProductService.class
+com\demo\service\ProductServiceImpl.class
+com\demo\SpringBootRestcrudProductApplication.class
+com\demo\beans\Product.class
+com\demo\controller\ProductController.class
+com\demo\dao\ProductDao.class
