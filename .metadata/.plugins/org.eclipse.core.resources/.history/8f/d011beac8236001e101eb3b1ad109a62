@@ -1,0 +1,9 @@
+package com.example.demo.dao;
+import com.example.demo.bean.*;
+public interface EmployeeDAO {
+
+	public int addEmployee(Employee emp); 
+		
+	
+
+}

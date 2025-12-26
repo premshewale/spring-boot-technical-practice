@@ -1,0 +1,13 @@
+package com.example.demo.bean;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Address {
+	
+	String city;
+	public Address() {
+		System.out.println("Address Default");
+	}
+
+}

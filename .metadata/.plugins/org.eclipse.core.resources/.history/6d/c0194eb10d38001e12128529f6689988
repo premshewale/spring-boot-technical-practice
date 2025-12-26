@@ -1,0 +1,30 @@
+package com.example.demo.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.bean.NewUser;
+import com.example.demo.dao.NewUserDAO;
+@Service
+public class NewUserServiceImpl implements NewUserService {
+	@Autowired
+	NewUserDAO nuDao;
+	public NewUserServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void addNewUser(NewUser nu) {
+		// TODO Auto-generated method stub
+		nuDao.save(nu);
+	}
+
+	@Override
+	public List<NewUser> displayAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

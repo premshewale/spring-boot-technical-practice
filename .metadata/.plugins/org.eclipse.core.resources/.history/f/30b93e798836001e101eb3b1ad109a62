@@ -1,0 +1,23 @@
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import com.example.demo.bean.Employee;
+import com.example.demo.services.EmployeeServices;
+
+@SpringBootApplication
+public class Day1SpringBoot1Application {
+
+	public static void main(String[] args) {
+		//SpringApplication.run(Day1SpringBoot1Application.class, args);
+		
+		ApplicationContext ctx =
+				SpringApplication.run(Day1SpringBoot1Application.class, args);
+			EmployeeServices e = ctx.getBean(EmployeeServices.class);
+			int i= e.addEmployee(new  Employee(11, "ABC", 50000));
+			System.out.println(i+" Rows Inserted");
+	}
+
+}

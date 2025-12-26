@@ -1,0 +1,37 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+@Controller
+public class HelloController {
+
+	public HelloController() {
+		// TODO Auto-generated constructor stub
+	}
+	@RequestMapping("/index")
+	public String showIndexPage() {
+		System.out.println("Inside showIndexPage");
+		return "index";
+	}
+	@RequestMapping("/newUser")
+	public String NewUserpage() {
+		System.out.println("Inside New User");
+		return "newUser";
+	}
+	@RequestMapping("/login")
+	public String LoginPage() {
+		System.out.println("Inside LoginPage");
+		return "index";
+	}
+	@RequestMapping("/changepass")
+	public String ChangePassPage() {
+		System.out.println("Inside ChangePassPage");
+		return "index";
+	}
+	@RequestMapping("/displayAll")
+	public String DisplayAllPage() {
+		System.out.println("Inside displayAll");
+		return "index";
+	}
+
+}

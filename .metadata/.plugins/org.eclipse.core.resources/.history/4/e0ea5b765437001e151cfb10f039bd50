@@ -1,0 +1,49 @@
+package com.example.demo.bean;
+
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+import jakarta.persistence.Table;
+
+
+@Entity
+@Table(name="Address1008")
+public class Address {
+
+	
+	@Id
+	Student stud;
+	
+	String city;
+	public Address() {
+		System.out.println("Address Default");
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public Address(String city) {
+		super();
+		this.city = city;
+	}
+	@Override
+	public String toString() {
+		return "Address [stud=" + stud + ", city=" + city + "]";
+	}
+	public Student getStud() {
+		return stud;
+	}
+	public void setStud(Student stud) {
+		this.stud = stud;
+	}
+	public Address(Student stud, String city) {
+		super();
+		this.stud = stud;
+		this.city = city;
+	}
+	
+
+}

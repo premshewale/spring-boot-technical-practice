@@ -1,0 +1,23 @@
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import com.example.demo.bean.Employee;
+
+@SpringBootApplication
+
+//@EnableAutoConfiguration  alternate got this is @SpringBootApplication
+//@Configuration
+//@CompnentScan
+public class Day1SpringBootApplication {
+
+	public static void main(String[] args) {
+		ApplicationContext ctx =
+			SpringApplication.run(Day1SpringBootApplication.class, args);
+		Employee emp=ctx.getBean(Employee.class) ;
+		System.out.println(emp);
+	}
+
+}

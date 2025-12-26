@@ -1,0 +1,27 @@
+<h1>displatAll.jsp</h1>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+${data}
+
+<table background="lightpink" border="4px">
+<tr bgcolor="orange">
+	<th>User Id</th>
+	<th>FirstName</th>
+	<th>LastName</th>
+	<th>User Name</th>
+	<th>Action</th>
+	</tr>
+	<c:forEach var="p" items="${data}">
+	<tr> 
+	<td><%=p.getId() %></td>
+	<td><%=p.getFirstname() %></td>
+	<td><%=p.getLastname() %></td>
+	<td><%=p.getUsername() %></td>
+	
+	<td><a href="DeleteUser?Id=<%=p.getId()%>">Delete</a>
+	<a href="EditUser?Id=<%=p.getId()%>">Edit</a></td>
+</tr>
+	<% } %>
+</table> 
+</body>   
+</html>

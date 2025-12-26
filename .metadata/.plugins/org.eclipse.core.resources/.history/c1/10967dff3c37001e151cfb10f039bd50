@@ -1,0 +1,9 @@
+package com.example.demo.bean;
+
+public class Students {
+
+	public Students() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

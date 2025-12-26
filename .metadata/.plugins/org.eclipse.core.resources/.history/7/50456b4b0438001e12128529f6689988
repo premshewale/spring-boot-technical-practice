@@ -1,0 +1,15 @@
+package com.example.demo.bean;
+
+public class NewUser {
+	
+	int id;
+	String firstname;
+	String lastname;
+	String username;
+	String password;
+	
+	public NewUser() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

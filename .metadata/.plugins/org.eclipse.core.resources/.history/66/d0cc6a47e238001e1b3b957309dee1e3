@@ -1,0 +1,46 @@
+package com.example.demo.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.bean.Product;
+import com.example.demo.dao.ProductDao;
+@Service
+public class ProductServicesImpl implements ProductService {
+	
+	@Autowired
+	ProductDao productdao;
+	
+	@Override
+	public List<Product> getAllProduct() {
+		// TODO Auto-generated method stub
+		return productdao.findAll();
+	}
+
+	@Override
+	public void addnewProduct(Product product) {
+		// TODO Auto-generated method stub
+		productdao.save(product);
+	}
+
+	@Override
+	public Product getById(int pid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int updateProduct(Product product) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void deleteById(int pid) {
+		// TODO Auto-generated method stub
+		productdao.deleteById(pid);
+	}
+	
+}

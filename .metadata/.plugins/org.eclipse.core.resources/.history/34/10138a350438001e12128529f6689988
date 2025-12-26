@@ -1,0 +1,9 @@
+package com.example.demo.bean;
+
+public class NewUser {
+
+	public NewUser() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

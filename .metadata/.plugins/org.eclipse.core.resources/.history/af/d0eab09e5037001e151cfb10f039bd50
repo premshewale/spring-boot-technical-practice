@@ -1,0 +1,14 @@
+package com.example.demo.controller;
+
+public class HelloController {
+
+	public HelloController() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public String showIndexPage() {
+		System.out.println("Inside showIndexPage");
+		return "index";
+	}
+
+}

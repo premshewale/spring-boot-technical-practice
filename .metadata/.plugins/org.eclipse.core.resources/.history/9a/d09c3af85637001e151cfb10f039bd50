@@ -1,0 +1,19 @@
+<h1>newUser.jsp</h1>
+<fieldset >
+<h2>Add Your Details</h2>
+<form action="validate">
+<table bgcolor="lightgrey">
+<tr>
+<td>User Id :</td> <td><input type="text" name="userid"></td></tr>
+<tr><td>First Name:</td><td> <input type="text" name="firstname"></td></tr>
+<tr><td>Last Name:</td><td> <input type="text" name="lastname"></td></tr>
+<tr><td>Salary:</td><td> <input type="text" name="salary"></td></tr>
+
+<tr><td><input type="submit" value="Add User"></td></tr>
+<tr><td><input type="Reset"></td></tr>
+</table>
+</form>
+
+
+</fieldset>
+<h4><a href="index.jsp">Go to Index Page..</a></h4>

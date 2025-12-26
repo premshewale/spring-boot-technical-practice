@@ -1,0 +1,22 @@
+
+
+<h2>displayAll.jsp</h2>
+<% List<NewUser> Userlist=(List<NewUser>)request.getAttribute("data"); %>
+<table background="lightpink" border="4px">
+<tr bgcolor="orange">
+	<th>User Id</th>
+	<th>User FirstName</th>
+	<th>User LastName</th>
+	
+	<%for(Employee p:Emplist) {%>
+<tr>
+	<td><%=p.getEmpno() %></td>
+	<td><%=p.getName() %></td>
+	<td><%=p.getSalary() %></td>
+	
+	<td><a href="DeleteProductServlet?productId=<%=p.getEmpno()%>">Delete</a>
+	<a href="EditProductServlet?productId=<%=p.getEmpno()%>">Edit</a></td>
+</tr>
+	<% } %>
+</table>
+

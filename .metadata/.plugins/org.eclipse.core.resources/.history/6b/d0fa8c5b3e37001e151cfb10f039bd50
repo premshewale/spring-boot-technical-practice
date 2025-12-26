@@ -1,0 +1,10 @@
+package com.example.demo.service;
+
+import com.example.demo.bean.Student;
+
+public interface StudentService {
+
+	int addStudnet(Student s);
+	
+
+}

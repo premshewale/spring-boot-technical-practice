@@ -1,0 +1,84 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Day1SpringBoot1Application",
+            "request": "launch",
+            "mainClass": "com.example.demo.Day1SpringBoot1Application",
+            "projectName": "Day_1_SpringBoot-2"
+        },
+        {
+            "type": "java",
+            "name": "Day1SpringBootApplication",
+            "request": "launch",
+            "mainClass": "com.example.demo.Day1SpringBootApplication",
+            "projectName": "Day_1_SpringBoot_1"
+        },
+        {
+            "type": "java",
+            "name": "Day2SpringBoot1Application",
+            "request": "launch",
+            "mainClass": "com.example.demo.Day2SpringBoot1Application",
+            "projectName": "Day_2_SpringBoot-1_JPA"
+        },
+        {
+            "type": "java",
+            "name": "SpringBootRestcrudProductApplication",
+            "request": "launch",
+            "mainClass": "com.demo.SpringBootRestcrudProductApplication",
+            "projectName": "SpringBootRestCrudProduct-SpringBootRestCrudProduct"
+        },
+        {
+            "type": "java",
+            "name": "Day1SpringBoot1Application(1)",
+            "request": "launch",
+            "mainClass": "com.example.demo.Day1SpringBoot1Application",
+            "projectName": "com.example-Day_1_SpringBoot-1"
+        },
+        {
+            "type": "java",
+            "name": "Day1SpringBootApplication(1)",
+            "request": "launch",
+            "mainClass": "com.example.demo.Day1SpringBootApplication",
+            "projectName": "com.example-Day_1_SpringBoot"
+        },
+        {
+            "type": "java",
+            "name": "Day2SpringBoot1Application(1)",
+            "request": "launch",
+            "mainClass": "com.example.demo.Day2SpringBoot1Application",
+            "projectName": "com.example-Day_2_SpringBoot-1"
+        },
+        {
+            "type": "java",
+            "name": "Day2SpringBoot2Application",
+            "request": "launch",
+            "mainClass": "com.example.demo.Day2SpringBoot2Application",
+            "projectName": "com.example-Day_2_SpringBoot-2"
+        },
+        {
+            "type": "java",
+            "name": "Day3SpringBoot1RestApplication",
+            "request": "launch",
+            "mainClass": "com.example.demo.Day3SpringBoot1RestApplication",
+            "projectName": "com.example-Day_3_SpringBoot-1_REST"
+        },
+        {
+            "type": "java",
+            "name": "Day4Assigment1Application",
+            "request": "launch",
+            "mainClass": "com.example.demo.Day4Assigment1Application",
+            "projectName": "com.example-Day_4_Assigment_1"
+        }
+    ]
+}

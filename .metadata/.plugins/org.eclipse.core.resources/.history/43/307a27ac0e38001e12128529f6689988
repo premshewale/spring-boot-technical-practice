@@ -1,0 +1,22 @@
+
+
+<h2>displayAll.jsp</h2>
+<% List<Employee> Emplist=(List<Employee>)request.getAttribute("prodlist"); %>
+<table background="lightpink" border="4px">
+<tr bgcolor="orange">
+	<th>Employee Number</th>
+	<th>Employee Name</th>
+	<th> salary</th>
+	
+	<%for(Employee p:Emplist) {%>
+<tr>
+	<td><%=p.getEmpno() %></td>
+	<td><%=p.getName() %></td>
+	<td><%=p.getSalary() %></td>
+	
+	<td><a href="DeleteProductServlet?productId=<%=p.getEmpno()%>">Delete</a>
+	<a href="EditProductServlet?productId=<%=p.getEmpno()%>">Edit</a></td>
+</tr>
+	<% } %>
+</table>
+

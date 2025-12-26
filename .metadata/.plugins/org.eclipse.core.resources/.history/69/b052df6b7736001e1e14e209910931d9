@@ -1,0 +1,9 @@
+package com.example.demo.bean;
+
+public class Address {
+
+	public Address() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

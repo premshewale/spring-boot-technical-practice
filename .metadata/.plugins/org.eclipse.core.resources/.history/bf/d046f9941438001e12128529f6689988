@@ -1,0 +1,26 @@
+
+
+
+${data}
+
+<table background="lightpink" border="4px">
+<tr bgcolor="orange">
+	<th>User Id</th>
+	<th>FirstName</th>
+	<th>LastName</th>
+	<th>User Name</th>
+	
+	<%for(NewUser p:NewUser) {%>
+<tr>
+	<td><%=p.getId() %></td>
+	<td><%=p.getFirstname() %></td>
+	<td><%=p.getLastname() %></td>
+	<td><%=p.getUsername() %></td>
+	
+	<td><a href="DeleteUser?Id=<%=p.getEmpno()%>">Delete</a>
+	<a href="EditUser?Id=<%=p.getEmpno()%>">Edit</a></td>
+</tr>
+	<% } %>
+</table> 
+</body>   
+</html>

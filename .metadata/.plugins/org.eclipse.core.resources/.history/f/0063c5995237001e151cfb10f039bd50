@@ -1,0 +1,16 @@
+package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class HelloController {
+
+	public HelloController() {
+		// TODO Auto-generated constructor stub
+	}
+	@RequestMapping("/index")
+	public String showIndexPage() {
+		System.out.println("Inside showIndexPage");
+		return "index";
+	}
+
+}

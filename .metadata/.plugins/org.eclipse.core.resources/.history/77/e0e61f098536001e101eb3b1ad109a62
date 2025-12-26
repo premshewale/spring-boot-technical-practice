@@ -1,0 +1,14 @@
+package com.example.demo.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.demo.dao.EmployeeDAO;
+
+public class EmployeeServiceImpl implements EmployeeServices{
+	@Autowired
+	EmployeeDAO empDao;
+	public EmployeeServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

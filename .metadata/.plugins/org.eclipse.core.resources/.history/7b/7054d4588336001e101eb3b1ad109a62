@@ -1,0 +1,21 @@
+package com.example.demo.dao;
+
+import org.springframework.transaction.jta.JtaAfterCompletionSynchronization;
+
+public class EmployeeDAOImpl implements EmployeeDAO {
+
+	public EmployeeDAOImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public int addEmployee(Employee emp) {
+		// TODO Auto-generated method stub\
+		String sql = "Insert into emp0908 values(?,?,?)";
+		int i= 
+				jt.update(sql,new Object[] {emp.)
+		return 0;
+	}
+	
+
+}

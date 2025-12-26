@@ -1,0 +1,6 @@
+<h1>index.jsp</h1>
+
+<h2><a href="newUser.jsp">New User</a>    ----newUser.jsp</h2>
+<h2><a href="login.jsp">Login</a>    ----login.jsp</h2>
+<h2><a href="changepass.jsp">Change Password</a>    ----changepass.jsp</h2>
+<h2><a href="displayAll.jsp">Display All</a>    ----displayAll.jsp</h2>

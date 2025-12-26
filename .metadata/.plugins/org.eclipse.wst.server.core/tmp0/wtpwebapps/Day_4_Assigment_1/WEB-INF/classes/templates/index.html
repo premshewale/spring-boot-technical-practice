@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Document Management</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Document Management</h1>
+
+    <form method="post" enctype="multipart/form-data" action="/documents/upload">
+        <input type="file" name="file"/>
+        <button type="submit">Upload</button>
+    </form>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>URL</th>
+            <th>Actions</th>
+        </tr>
+        <tr th:each="document : ${documents}">
+            <td th:text="${document.name}"></td>
+            <td th:text="${document.type}"></td>
+            <td><a th:href="@{${document.url}}" th:text="${document.url}"></a></td>
+            <td>
+                <form method="post" th:action="@{/documents/{id}(id=${document.id})}">
+                    <input type="hidden" name="_method" value="delete"/>
+                    <button type="submit">Delete</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <div>
+        <a th:href="@{/documents?page=${page - 1}}" th:if="${page > 0}">Previous</a>
+        <a th:href="@{/documents?page=${page + 1}}" th:if="${documents != null and documents.size() == 5}">Next</a>
+    </div>
+</body>
+</html>

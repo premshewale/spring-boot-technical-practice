@@ -1,0 +1,31 @@
+package com.example.demo.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.bean.Student;
+import com.example.demo.dao.StudentDAO;
+@Service
+public class StudentServiceImpl implements StudentService {
+	@Autowired
+	StudentDAO sd;
+	public StudentServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public int addStudent(Student s) {
+	sd.save(s);			//Insert ORM
+		return 1;
+	}
+
+	@Override
+	public void displayAll() {
+		List<Student> ls= sd.findAll();
+		for(Student:ls) {
+		System.out.println(ls);
+	}
+
+}

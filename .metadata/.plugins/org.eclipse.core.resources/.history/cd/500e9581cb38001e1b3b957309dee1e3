@@ -1,0 +1,18 @@
+<h1>changepass.jsp</h1>
+<fieldset >
+<h2>Add Your Details for Login</h2>
+<form action="changepass">
+<table bgcolor="lightgrey">
+<tr>
+
+<tr><td>User Name:</td><td> <input type="text" name="username"></td></tr>
+<tr><td>Old Password:</td><td> <input type="text" name="oldpassword"></td></tr>
+<tr><td>New Password:</td><td> <input type="text" name="newpassword"></td></tr>
+<tr><td><input type="submit" value="change password"></td></tr>
+<tr><td><input type="Reset"></td></tr>
+</table>
+</form>
+
+
+</fieldset>
+<h4><a href="newUser">Go to Index Page..</a></h4>

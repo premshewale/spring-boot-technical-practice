@@ -1,0 +1,17 @@
+package com.example.demo.service;
+
+import com.example.demo.bean.NewUser;
+
+public class NewUserServiceImpl implements NewUserService {
+
+	public NewUserServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void addNewUser(NewUser nu) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
